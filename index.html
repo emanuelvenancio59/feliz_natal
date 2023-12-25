@@ -42,7 +42,7 @@
   li {
     list-style: none;
     font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: cursive;
     font-weight: 800;
     color: aliceblue;
   }
@@ -309,9 +309,11 @@
 
     <nav class="header_nav">
       <ul>
-        <li class="frase">Home</li>
+ <a href="https://wa.me/244944890428/?text=">
+ <li class="profile">Emanuel Venâncio</li>
+ </a>
         <a href="#container_frases">
-          <li class="galeria">Frases</li>
+          <li class="frases">Frases</li>
         </a>
       </ul>
     </nav>
@@ -322,8 +324,8 @@
 
     <img src="https://drive.google.com/uc?export=view&amp;id=1zrZcvGrvpvqaBI7yvkgsGGSqtssSQST-" class="me" />
 
-    <p class="ola_text">
-      ``<b id="userName"></b>Que a paz natalina envolva cada momento, tornando este Natal inesquecível.``
+    <p class="ola_text" id="userName">
+      ``<b></b>Que a paz natalina envolva cada momento, tornando este Natal inesquecível.``
     </p>
 
   </section>
@@ -455,7 +457,7 @@
 
       // Obtém o texto a ser copiado
 
-      let conteudo = '*' + textoElemento.textContent + '🎄😘😍🎄*' + '\n' + '\n' + ' _por: Emanuel Venâncio_' + '\n' + '\n' +'Encontre também a sua frase em: ';
+      let conteudo = '*' + textoElemento.textContent + '🎄😘😍🎄*' + '\n' + '\n' + ' _por: Emanuel Venâncio_' + '\n' + '\n' +'Encontre também a sua frase em: https://emanuelvenancio59.github.io/feliz_natal/';
 
       // Copia o texto para a área de transferência
       areaTransferencia.writeText(conteudo).then(function() {
