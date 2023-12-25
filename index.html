@@ -141,7 +141,7 @@
   }
 
   .ola_text b {
-    color: #505080;
+    color: #903030;
     font-weight: 800;
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
@@ -407,7 +407,7 @@
 
     <input type="text" class="nome" placeholder="Digite seu nome aqui">
 
-    <button onclick="dialogClose()">Concluir</button>
+    <a href="#userName"><button onclick="dialogClose()">Concluir</button></a>
 
   </dialog>
   <!----DIALOG DIALOG DIALOG DIALOG---->
@@ -433,9 +433,6 @@
         //classList.remove('dialogOn');
 
         document.querySelector('.ola_text b').textContent = campo_nome.value + ', ';
-        let userName = document.getElementById('userName');
-        userName.focus();
-
       } else {
         alert('Por favor, coloque seu nome!')
       }
