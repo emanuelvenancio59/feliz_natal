@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Emanuel Venâncio">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+
+<!-- HTML -->
+
+<!-- Custom Styles -->
+</head>
+<style>
+  * {
+    margin: 0;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  header {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 5px solid lime;
+    gap: 10px;
+    background: #202020;
+    animation: borda 20s linear infinite;
+  }
+
+  header nav {}
+
+  .header_nav ul {
+    display: flex;
+    padding: 0;
+    justify-content: space-evenly;
+  }
+
+  li {
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    color: aliceblue;
+  }
+
+  h1 {
+    font-family: cursive;
+    animation: colar 1s linear infinite;
+    font-size: 30px;
+    align-self: center;
+  }
+
+  @keyframes colar {
+    0% {
+      color: aliceblue;
+    }
+
+    20% {
+      color: yellow;
+    }
+
+    40% {
+      color: orange;
+    }
+
+    60% {
+      color: red;
+    }
+
+    80% {
+      color: lime;
+    }
+
+    100% {
+      color: aliceblue;
+    }
+  }
+
+  @keyframes borda {
+    0% {
+      border-color: blue;
+    }
+
+    20% {
+      border-color: mediumvioletred;
+    }
+
+    40% {
+      border-color: green;
+    }
+
+    60% {
+      border-color: deepskyblue;
+    }
+
+    80% {
+      border-color: lime;
+    }
+
+    100% {
+      border-color: aliceblue;
+    }
+  }
+
+  .header_caixa {
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .header_caixa img {
+    height: 100%;
+    align-self: center;
+  }
+
+  /***********/
+  .container_Ola {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .me {
+    height: 200px;
+    width: 180px;
+    align-self: center;
+
+  }
+
+  .ola_text {
+    font-family: cursive;
+    width: 50%;
+    align-self: center;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .ola_text b {
+    color: #505080;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+  }
+
+  .container_frases {
+    display: flex;
+    flex-direction: column;
+    background: #202020;
+    gap: 20px;
+  }
+
+  .container_frases-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h2 {
+    align-self: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: lightsalmon;
+    font-style: italic;
+  }
+
+  .container_frases-icon {
+    width: 80%;
+    height: 50px;
+    align-self: center;
+  }
+
+  .intro p {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: aliceblue;
+  }
+
+  .intro p b {
+    color: green;
+  }
+
+  .listaFrases {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: whitesmoke;
+    background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fpng.pngtree.com%2Fthumb_back%2Ffw800%2Fbackground%2F20190221%2Fourmid%2Fpngtree-simple-texture-white-christmas-image_44936.jpg&tbnid=s2fqAh700oaUFM&vet=1&imgrefurl=https%3A%2F%2Fpt.pngtree.com%2Ffreebackground%2Fsimple-texture-white-christmas_971431.html&docid=JJeIe3wTqlV7qM&w=640&h=960&hl=pt-PT&source=sh%2Fx%2Fim%2Fm1%2F2");
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .listaFrases p {
+    position: relative;
+    width: 95%;
+    align-self: center;
+    height: 50px;
+    font-family: cursive;
+    background: rgb(0 0 0/.8);
+    color: #ddd;
+    height: 100%;
+    padding: 6px;
+    border-radius: 20px;
+  }
+  
+  iframe{
+    width: 100%;
+  }
+
+  .copyBtn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 2%;
+    right: 3%;
+  }
+
+  dialog {
+    height: 80%;
+    width: 80%;
+    position: fixed;
+    left: 4%;
+    bottom: 100%;
+    border: 3px solid #802020;
+    background: #202020;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    transition: all 1s;
+  }
+
+
+  .dialogOn {
+    bottom: 5%;
+  }
+
+  dialog input,
+  button {
+    font-size: 15px;
+  }
+
+  .dialog_img {
+    height: 200px;
+    width: 60%;
+    align-self: center;
+  }
+
+  dialog h3 {
+    font-size: 45px;
+    font-family: cursive;
+    color: #802020;
+    animation: colar 10s linear infinite;
+  }
+
+  dialog p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    color: papayawhip;
+  }
+
+  dialog input {
+    border: none;
+    border-bottom: 2px solid aliceblue;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: aliceblue;
+    background: none;
+    text-align: center;
+  }
+
+  dialog button {
+    border-radius: 50px;
+    padding: 10px;
+    background: #802020;
+    color: papayawhip;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 20px;
+    border: none;
+  }
+  footer{
+    background: #202020;
+    text-align: center;
+  }
+  code{
+    color: #ccc;
+    font-size: 15px;
+  }
+  footer a{
+    font-family: courier;
+    font-size: 19px;
+    color: lime;
+  }
+</style>
+
+<body>
+
+  <header>
+
+    <div class="header_caixa caixa_1">
+      <h1>Feliz Natal</h1>
+      <img src="https://drive.google.com/uc?export=view&amp;id=1zi2zWXKMnzzJf9u0X8t10wwzVu6Vl88Z" />
+    </div>
+
+    <nav class="header_nav">
+      <ul>
+        <li class="frase">Home</li>
+        <a href="#container_frases">
+          <li class="galeria">Frases</li>
+        </a>
+      </ul>
+    </nav>
+
+  </header>
+
+  <section class="container container_Ola">
+
+    <img src="https://drive.google.com/uc?export=view&amp;id=1zrZcvGrvpvqaBI7yvkgsGGSqtssSQST-" class="me" />
+
+    <p class="ola_text">
+      ``<b></b>Que a paz natalina envolva cada momento, tornando este Natal inesquecível.``
+    </p>
+
+  </section>
+  <section class="container container_frases" id="container_frases">
+    <div class="intro container_frases-intro">
+
+      <img src="https://drive.google.com/uc?export=view&amp;id=1zeKBUR_6E5eAUJemb23Zkpg7-Fi066LI" class="container_frases-icon" />
+
+      <h2>Algumas Frases lindas 👇</h2>
+
+      <p>
+        Partilhe frases lindas com os seus amigos e familiares no <b>
+          whatsapp
+        </b>.
+      </p>
+
+    </div>
+
+
+    <div class="listaFrases">
+      <p class="frase" id="frase1">1. "Que a magia do Natal encha seu coração de alegria e sua casa de amor."<img src="https://drive.google.com/uc?export=view&amp;id=1-CII5UDNcQxiU3Tg2zrhgPJOOAKfDXX6" alt="/copia-de.png" class="copyBtn" onclick="copiarTexto('frase1')"></p>
+
+      <p class="frase" id="frase2">2. "Neste Natal, que a paz seja presente e o amor guie cada passo da sua jornada."<img src="https://drive.google.com/uc?export=view&amp;id=1-CII5UDNcQxiU3Tg2zrhgPJOOAKfDXX6" alt="/copia-de.png" class="copyBtn" onclick="copiarTexto('frase2')"></p>
+
+      <p class="frase" id="frase3">3. "Desejamos que as luzes do Natal iluminem não apenas a árvore, mas também o caminho de cada um."<img src="https://drive.google.com/uc?export=view&amp;id=1-CII5UDNcQxiU3Tg2zrhgPJOOAKfDXX6" alt="/copia-de.png" class="copyBtn" onclick="copiarTexto('frase3')"></p>
+      
+      <img src="https://drive.google.com/uc?export=view&amp;id=10O6q6G9QZtCwJ4BLVAdZq8Uy1UbBRHom" alt="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimg.freepik.com%2Ffotos-gratis%2Fvista-da-arvore-de-natal-lindamente-decorada_23-2150678928.jpg&tbnid=uu5Pf-WW_H3teM&vet=1&imgrefurl=https%3A%2F%2Fbr.freepik.com%2Ffotos%2Fnatal&docid=uuHuPZgGppZrTM&w=351&h=626&source=sh%2Fx%2Fim%2Fm1%2F2" class="frase_img">
+
+      <p class="frase" id="frase4">4. "Que a união e a felicidade desta época especial se estendam por todos os dias do ano que se inicia."<img src="https://drive.google.com/uc?export=view&amp;id=1-CII5UDNcQxiU3Tg2zrhgPJOOAKfDXX6" alt="/copia-de.png" class="copyBtn" onclick="copiarTexto('frase4')"></p>
+
+<iframe height="350" src="https://drive.google.com/file/d/1-mWNBTYxLSUv_8CHMJxfF5GwMR_VD9IL/preview" frameborder="0" allowfullscreen></iframe>
+
+      <p class="frase" id="frase5">5. "Que a doçura do espírito natalino envolva você, trazendo harmonia e calor aos seus dias."<img src="https://drive.google.com/uc?export=view&amp;id=1-CII5UDNcQxiU3Tg2zrhgPJOOAKfDXX6" class="copyBtn" onclick="copiarTexto('frase5')"></p>
+       <img src="https://drive.google.com/uc?export=view&amp;id=10QYk3CIsk07x8NsAHgA7l6QlyuDVoMwU" alt="https://br.freepik.com/fotos-premium/o-natal_97787768.htm#query=natal&position=9&from_view=keyword&track=sph&uuid=3d091bf5-0168-4bb9-a293-fc909ab57df7"
+       class="frase_img">
+
+      <p class="frase" id="frase6">6. "Neste Natal, celebre não apenas com presentes, mas com gratidão e sorrisos compartilhados."<img src="https://drive.google.com/uc?export=view&amp;id=1-CII5UDNcQxiU3Tg2zrhgPJOOAKfDXX6" alt="/copia-de.png" class="copyBtn" onclick="copiarTexto('frase6')"></p>
+
+<iframe height="350" src="https://drive.google.com/file/d/1-oyqra7ark0qQkcDdjd_YPo5QnXJmUH8/preview" frameborder="0" allowfullscreen></iframe>
+
+      <p class="frase" id="frase7">7. "Que a esperança e a fé renovem-se em seu coração, trazendo consigo um Novo Ano cheio de realizações."<img src="https://drive.google.com/uc?export=view&amp;id=1-CII5UDNcQxiU3Tg2zrhgPJOOAKfDXX6" alt="/copia-de.png" class="copyBtn" onclick="copiarTexto('frase7')"></p>
+      
+       <img src="https://drive.google.com/uc?export=view&amp;id=10QGiSzJr_1hJz8JZHNB2zuN1zusScoiN" alt="https://br.freepik.com/fotos-gratis/caixa-de-presente-de-natal_3738035.htm#query=natal&position=14&from_view=keyword&track=sph&uuid=3d091bf5-0168-4bb9-a293-fc909ab57df7" class="frase_img">
+
+      <p class="frase" id="frase8">8. "Que a magia do Natal transforme seus sonhos em realidade e suas metas em conquistas."<img src="https://drive.google.com/uc?export=view&amp;id=1-CII5UDNcQxiU3Tg2zrhgPJOOAKfDXX6" alt="/copia-de.png" class="copyBtn" onclick="copiarTexto('frase8')"></p>
+
+      <p class="frase" id="frase9">9. "Neste momento mágico, que a generosidade e a compaixão estejam presentes em cada gesto e palavra."<img src="https://drive.google.com/uc?export=view&amp;id=1-CII5UDNcQxiU3Tg2zrhgPJOOAKfDXX6" alt="/copia-de.png" class="copyBtn" class="copyBtn" onclick="copiarTexto('frase9')"></p>
+
+      <p class="frase" id="frase10">10. "Que a luz das estrelas natalinas ilumine seus dias com alegria, paz e prosperidade."<img src="https://drive.google.com/uc?export=view&amp;id=1-CII5UDNcQxiU3Tg2zrhgPJOOAKfDXX6" alt="/copia-de.png" class="copyBtn" onclick="copiarTexto('frase10')"></p>
+    </div>
+
+  </section>
+  
+  <footer>
+    
+    <code>
+      Copyright &#169; Emanuel Venâncio, 2023. Luanda - Angola
+      
+    </code>
+    
+    <p>
+      <a href="https://wa.me/244944890428/?text=">Meu WhatsApp</a>
+    </p>
+    
+  </footer>
+
+
+
+  <!----DIALOG DIALOG DIALOG DIALOG---->
+  <dialog>
+
+    <h3>Olá,seja bem-vindo(a)!</h3>
+
+    <img src="https://drive.google.com/uc?export=view&amp;id=1zgueAQEcn9MB8KSaRxoyFLB0KYAeXgmi" class="dialog_img" />
+
+    <p>
+      Como você se chama?
+    </p>
+
+    <input type="text" class="nome" placeholder="Digite seu nome aqui">
+
+    <button onclick="dialogClose()">Concluir</button>
+
+  </dialog>
+  <!----DIALOG DIALOG DIALOG DIALOG---->
+
+  <script>
+    window.onload = function() {
+
+      document.querySelector('dialog').classList.add('dialogOn');
+
+      //classList.add('dialogOn');
+
+
+    }
+
+    let campo_nome = document.querySelector('dialog .nome');
+
+    function dialogClose() {
+
+      if (campo_nome.value != '') {
+
+        document.querySelector('dialog').classList.remove('dialogOn');
+
+        //classList.remove('dialogOn');
+
+        document.querySelector('.ola_text b').textContent = campo_nome.value + ', ';
+
+      } else {
+        alert('Por favor, coloque seu nome!')
+      }
+    }
+
+
+    /**Função Copiar Texto***/
+
+    function copiarTexto(e) {
+
+      let txtId = e;
+
+      // Seleciona o elemento com o texto
+      var textoElemento = document.getElementById(txtId);
+
+      // Cria um objeto de área de transferência
+
+      let areaTransferencia = navigator.clipboard;
+
+      // Obtém o texto a ser copiado
+
+      let conteudo = '*' + textoElemento.textContent + '🎄😘😍🎄*' + '\n' + '\n' + ' _por: Emanuel Venâncio_';
+
+      // Copia o texto para a área de transferência
+      areaTransferencia.writeText(conteudo).then(function() {
+        alert('Texto copiado com sucesso!');
+
+        // Abre o WhatsApp com a mensagem pré-definida
+        window.location.href = 'https://wa.me/?text=' + encodeURIComponent(conteudo);
+      }).catch(function(err) {
+        console.error('Erro ao copiar texto: ', err);
+      });
+
+
+    }
+  </script>
+</body>
+
+</html>
