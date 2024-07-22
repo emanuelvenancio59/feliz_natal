@@ -1,0 +1,103 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do artigo principal */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+article p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h3 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    border-radius: 8px;
+}
+
+footer section h2 {
+    margin-bottom: 10px;
+}
+
+footer section p {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 10px 0;
+}
